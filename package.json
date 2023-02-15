@@ -1,6 +1,6 @@
 {
   "name": "link_sequra",
-  "version": "22.1.0",
+  "version": "23.1.0",
   "description": "Sequra cartridge",
   "main": "index.js",
   "scripts": {

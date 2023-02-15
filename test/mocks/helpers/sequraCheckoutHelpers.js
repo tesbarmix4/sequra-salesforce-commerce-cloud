@@ -225,7 +225,7 @@ function proxyModel() {
                 const platformJSON = {};
                 platformJSON.name = 'Sequra Salesforce Commerce Cloud';
                 platformJSON.version = '1.0.0';
-                platformJSON.plugin_version = '22.1.0';
+                platformJSON.plugin_version = '23.1.0';
                 platformJSON.uname = '';
                 platformJSON.db_name = '';
                 platformJSON.db_version = '';

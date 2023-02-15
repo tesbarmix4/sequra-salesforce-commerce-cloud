@@ -1,6 +1,6 @@
-## Sequra 22.1.0 Cartridge
+## Sequra 23.1.0 Cartridge
 
-1. To install the cartridge please check the integration documentation in: ./documentation/SFRA Sequra Integration-Documentation-22.1.0
+1. To install the cartridge please check the integration documentation in: ./documentation/SFRA Sequra Integration-Documentation-23.1.0
 
 2. To upload the cartridges:
 
