@@ -1,0 +1,7 @@
+node_modules
+**/static/**
+**/thirdParty/**
+dw.json
+**/*.zip
+cartridges/jsconfig.json
+dw-api-types

@@ -1,0 +1,21 @@
+<isscript>
+    var assets = require('*/cartridge/scripts/assets.js');
+    assets.addCss('/css/checkout/sequraCss.css');
+</isscript>
+<isloop items="${pdict.order.billing.payment.applicablePaymentMethods}" var="paymentOption" status="loopSate">
+    <isif condition="${paymentOption.ID === 'CREDIT_CARD'}">
+        <isinclude template="checkout/billing/paymentOptions/creditCardTab" />
+        <isslot id="available-payment-methods" description="Available Payment Methods" context="global" />
+    </isif>
+    <isif condition="${paymentOption.ID === 'SEQURA'}">
+    	<isset name="sequra_PaymentsDisplay" value="${pdict.order.sequra_PaymentsDisplay}" scope="page"  />
+    	<isif condition="${!sequra_PaymentsDisplay || sequra_PaymentsDisplay === 'Grouped'}">
+        	<isinclude template="checkout/billing/paymentOptions/sequra/sequraTab" />
+        <iselse>
+        	<input type="hidden" id="sequraTabsActive" value="true" />
+		    <input type="hidden" id="sequraPaymentValue" data-widgetvalue="${pdict.order.sequraWidgetAmount}" />
+        </iselse>
+        </isif>
+    </isif>
+</isloop>
+    

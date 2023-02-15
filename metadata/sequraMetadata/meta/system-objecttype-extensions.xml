@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+
+    <type-extension type-id="CustomerAddress">
+        <system-attribute-definitions>
+            <attribute-definition attribute-id="ID">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="UUID">
+                <min-length>0</min-length>
+                <field-length>28</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="address1">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="address2">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="city">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="companyName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="countryCode">
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">United States</display>
+                        <value>US</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">France</display>
+                        <value>FR</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Italy</display>
+                        <value>IT</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Japan</display>
+                        <value>JP</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">China</display>
+                        <value>CN</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">United Kingdom</display>
+                        <value>GB</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Spain</display>
+                        <value>ES</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Portugal</display>
+                        <value>PT</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="creationDate"/>
+            <attribute-definition attribute-id="firstName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="jobTitle">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="lastModified"/>
+            <attribute-definition attribute-id="lastName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="phone">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="postBox">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="postalCode">
+                <min-length>0</min-length>
+                <field-length>10</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="salutation">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="secondName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="stateCode">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="suffix">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="suite">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="title">
+                <min-length>0</min-length>
+            </attribute-definition>
+        </system-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Standard">
+                <display-name xml:lang="x-default">Standard Address</display-name>
+                <attribute attribute-id="ID" system="true"/>
+                <attribute attribute-id="title" system="true"/>
+                <attribute attribute-id="companyName" system="true"/>
+                <attribute attribute-id="salutation" system="true"/>
+                <attribute attribute-id="firstName" system="true"/>
+                <attribute attribute-id="secondName" system="true"/>
+                <attribute attribute-id="lastName" system="true"/>
+                <attribute attribute-id="suffix" system="true"/>
+                <attribute attribute-id="address1" system="true"/>
+                <attribute attribute-id="address2" system="true"/>
+                <attribute attribute-id="suite" system="true"/>
+                <attribute attribute-id="postBox" system="true"/>
+                <attribute attribute-id="city" system="true"/>
+                <attribute attribute-id="postalCode" system="true"/>
+                <attribute attribute-id="countryCode" system="true"/>
+                <attribute attribute-id="stateCode" system="true"/>
+                <attribute attribute-id="phone" system="true"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+    <type-extension type-id="Order">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="sequra_TransactionID">
+                <display-name xml:lang="x-default">Sequra Transaction ID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_orderInformation">
+                <display-name xml:lang="x-default">Sequra Order Information</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Sequra">
+                <display-name xml:lang="x-default">Sequra</display-name>
+                <attribute attribute-id="sequra_TransactionID"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+    <type-extension type-id="OrderAddress">
+        <system-attribute-definitions>
+            <attribute-definition attribute-id="UUID">
+                <min-length>0</min-length>
+                <field-length>28</field-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="address1">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="address2">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="city">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="companyName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="countryCode">
+                <value-definitions>
+                    <value-definition>
+                        <display xml:lang="x-default">United States</display>
+                        <value>US</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">France</display>
+                        <value>FR</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Italy</display>
+                        <value>IT</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Japan</display>
+                        <value>JP</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">China</display>
+                        <value>CN</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">United Kingdom</display>
+                        <value>GB</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Spain</display>
+                        <value>ES</value>
+                    </value-definition>
+                    <value-definition>
+                        <display xml:lang="x-default">Portugal</display>
+                        <value>PT</value>
+                    </value-definition>
+                </value-definitions>
+            </attribute-definition>
+            <attribute-definition attribute-id="creationDate"/>
+            <attribute-definition attribute-id="firstName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="jobTitle">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="lastModified"/>
+            <attribute-definition attribute-id="lastName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="phone">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="postBox">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="postalCode">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="salutation">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="secondName">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="stateCode">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="suffix">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="suite">
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="title">
+                <min-length>0</min-length>
+            </attribute-definition>
+        </system-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Standard">
+                <display-name xml:lang="x-default">Standard Address</display-name>
+                <attribute attribute-id="title" system="true"/>
+                <attribute attribute-id="companyName" system="true"/>
+                <attribute attribute-id="salutation" system="true"/>
+                <attribute attribute-id="firstName" system="true"/>
+                <attribute attribute-id="secondName" system="true"/>
+                <attribute attribute-id="lastName" system="true"/>
+                <attribute attribute-id="suffix" system="true"/>
+                <attribute attribute-id="address1" system="true"/>
+                <attribute attribute-id="address2" system="true"/>
+                <attribute attribute-id="suite" system="true"/>
+                <attribute attribute-id="postBox" system="true"/>
+                <attribute attribute-id="city" system="true"/>
+                <attribute attribute-id="postalCode" system="true"/>
+                <attribute attribute-id="countryCode" system="true"/>
+                <attribute attribute-id="stateCode" system="true"/>
+                <attribute attribute-id="phone" system="true"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+
+    <type-extension type-id="OrderPaymentInstrument">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="sequraPaymentMethod">
+                <display-name xml:lang="x-default">Sequra Payment Method</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_orderLocationURL">
+                <display-name xml:lang="x-default">Sequra Order Location URL</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_orderStatus">
+                <display-name xml:lang="x-default">Sequra Order Status</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+        </custom-attribute-definitions>
+    </type-extension>
+
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="sequra_Configuration">
+                <display-name xml:lang="x-default">Sequra JSON Configuration</display-name>
+                <type>text</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_assetKey">
+                <display-name xml:lang="x-default">Sequra AssetKey</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_merchantID_ES">
+                <display-name xml:lang="x-default">Sequra Merchant ID Spain</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_merchantID_IT">
+                <display-name xml:lang="x-default">Sequra Merchant ID Italy</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequra_merchantID_PT">
+                <display-name xml:lang="x-default">Sequra Merchant ID Portugal</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+            <attribute-definition attribute-id="sequraPaymentsDisplay">
+				<display-name xml:lang="x-default">Display Sequra Payments in Checkout.</display-name>
+				<description xml:lang="x-default">Control How Sequra Payments Methods are displayed in the checkout. Values: 1) Grouped: One Payment Method Sequra and when you click on it then the Sequra payment methods allowed (i1, sp1, pp3, pp5) are displayed 2) Separated: The Sequra Payments Methods allowed are displayed directly in the Checkout payments.</description>
+				<type>enum-of-string</type>
+				<mandatory-flag>false</mandatory-flag>
+				<externally-managed-flag>false</externally-managed-flag>
+				<value-definitions>
+					<value-definition default="true">
+						<display xml:lang="x-default">Grouped</display>
+						<value>Grouped</value>
+					</value-definition>
+					<value-definition>
+						<display xml:lang="x-default">Separated</display>
+						<value>Separated</value>
+					</value-definition>
+				</value-definitions>
+		    </attribute-definition>
+	        </custom-attribute-definitions>
+        <group-definitions>
+            <attribute-group group-id="Sequra">
+                <display-name xml:lang="x-default">Sequra Configuration</display-name>
+                <attribute attribute-id="sequra_merchantID_ES"/>
+                <attribute attribute-id="sequra_merchantID_PT"/>
+                <attribute attribute-id="sequra_merchantID_IT"/>
+                <attribute attribute-id="sequra_assetKey"/>            
+                <attribute attribute-id="sequra_Configuration"/>
+                <attribute attribute-id="sequraPaymentsDisplay"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+</metadata>

@@ -1,0 +1,39 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+<isset name="sequraWidgetAmount" value="${pdict.sequraWidgetAmount}" scope="page"/>
+<isloop items="${pdict.sequraPaymentOptions}" var="sequraPaymentOption" status="loopSate">
+	<div class="row ${sequraPaymentOption.product}">
+		<div class="col-12">
+			<div class="row ${sequraPaymentOption.product}-content" id="${sequraPaymentOption.product}-content" >
+				<div class="form-check col-12 start-lines">
+					<input id="sequraPaymentMethod-${sequraPaymentOption.product}" name="${pdict.sequraForm.sequra.sequraPaymentMethod.htmlName}" type="radio" class="form-check-input" value="${sequraPaymentOption.product}">
+			     	
+			     	<input id="sequraCampaign-${sequraPaymentOption.product}" name="${pdict.sequraForm.sequra.sequraCampaign.htmlName}" type="hidden" class="form-check-input" value="${sequraPaymentOption.campaign}">
+			     	
+				    <label class="form-check-label sequra-payment-method-option" for="sequraPaymentMethod-${sequraPaymentOption.product}">
+				        <span class="display-name">${sequraPaymentOption.title}</span>
+				        <span class="sequra-educational-popup" data-amount="${sequraWidgetAmount}" data-product="${sequraPaymentOption.product}">+info</span>
+				    </label>
+				</div>
+			</div>
+			<div class="row">
+			 	<div class="col-12 sequraInfo d-none">
+			 		<isif condition="${!empty(sequraPaymentOption.long_title)}">
+		        		<span><b>${sequraPaymentOption.long_title}</b></span>
+		        	</isif>
+        			<isif condition="${!empty(sequraPaymentOption.claim)}">
+        				<span>${sequraPaymentOption.claim}</span>
+        			</isif>
+        			<isif condition="${!empty(sequraPaymentOption.description) && sequraPaymentOption.long_title.toString().indexOf(sequraPaymentOption.description) === -1}">
+        				<br/>
+		        		<span>${sequraPaymentOption.description}</span>
+		        	</isif>
+		        	<iscomment>
+			        	<isif condition="${!empty(sequraPaymentOption.cost_description) && sequraPaymentOption.long_title.toString().indexOf(sequraPaymentOption.cost_description) === -1}">
+	        				<span>${sequraPaymentOption.cost_description}</span>
+	        			</isif>		
+        			</iscomment>				        	
+			     </div>
+			</div>
+		</div>
+	</div>	
+</isloop>	

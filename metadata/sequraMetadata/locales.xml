@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<locales xmlns="http://www.demandware.com/xml/impex/locales/2015-04-30">
+    <locale locale-id="de">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="de_DE">
+        <fallback-locale>de</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>.</decimal-grouping-character>
+            <decimal-decimal-separator>,</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-#,##0.00 *</long-currency-negative-pattern>
+            <long-currency-positive-pattern>#,##0.00 *</long-currency-positive-pattern>
+            <currency-grouping-character>.</currency-grouping-character>
+            <currency-decimal-separator>,</currency-decimal-separator>
+            <long-date-pattern>dd.MM.yyyy</long-date-pattern>
+            <short-date-pattern>d.M.yy</short-date-pattern>
+            <time-pattern>HH:mm:ss</time-pattern>
+            <date-time-am-string>vorm.</date-time-am-string>
+            <date-time-pm-string>nachm.</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>.</integer-grouping-character>
+            <integer-decimal-character>,</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>.</quantity-grouping-character>
+            <quantity-decimal-character>,</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>dd.MM.yyyy</input-date-pattern>
+            <input-time-pattern>HH:mm</input-time-pattern>
+            <input-date-time-pattern>dd.MM.yyyy HH:mm</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="default">
+        <fallback-locale/>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-*#,##0.00</long-currency-negative-pattern>
+            <long-currency-positive-pattern>*#,##0.00</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>MMM d, yyyy</long-date-pattern>
+            <short-date-pattern>M/d/yy</short-date-pattern>
+            <time-pattern>h:mm:ss a</time-pattern>
+            <date-time-am-string>am</date-time-am-string>
+            <date-time-pm-string>pm</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>MM/dd/yyyy</input-date-pattern>
+            <input-time-pattern>h:mm a</input-time-pattern>
+            <input-date-time-pattern>MM/dd/yyyy h:mm a</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="en">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="en_CA">
+        <fallback-locale>en</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>- #,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>- #,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>* - #,##0.00</long-currency-negative-pattern>
+            <long-currency-positive-pattern>* #,##0.00</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>MMM dd, yyyy</long-date-pattern>
+            <short-date-pattern>dd/MM/yyyy</short-date-pattern>
+            <time-pattern>hh:mm:ss a</time-pattern>
+            <date-time-am-string>AM</date-time-am-string>
+            <date-time-pm-string>PM</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>- #,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>- #,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>dd/MM/yyyy</input-date-pattern>
+            <input-time-pattern>hh:mm a</input-time-pattern>
+            <input-date-time-pattern>dd/MM/yyyy hh:mm a</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="en_GB">
+        <fallback-locale>en</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-*#,##0.00</long-currency-negative-pattern>
+            <long-currency-positive-pattern>*#,##0.00</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>d MMM yyyy</long-date-pattern>
+            <short-date-pattern>dd/MM/yyyy</short-date-pattern>
+            <time-pattern>HH:mm:ss</time-pattern>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>dd/MM/yyyy</input-date-pattern>
+            <input-time-pattern>HH:mm</input-time-pattern>
+            <input-date-time-pattern>dd/MM/yyyy HH:mm</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="en_US">
+        <fallback-locale>en</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-*#,##0.00</long-currency-negative-pattern>
+            <long-currency-positive-pattern>*#,##0.00</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>MMM d, yyyy</long-date-pattern>
+            <short-date-pattern>M/d/yy</short-date-pattern>
+            <time-pattern>h:mm:ss a</time-pattern>
+            <date-time-am-string>am</date-time-am-string>
+            <date-time-pm-string>pm</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>MM/dd/yyyy</input-date-pattern>
+            <input-time-pattern>h:mm a</input-time-pattern>
+            <input-date-time-pattern>MM/dd/yyyy h:mm a</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="es">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="es_ES">
+        <fallback-locale>es</fallback-locale>
+    </locale>
+    <locale locale-id="fr">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="fr_CA">
+        <fallback-locale>fr</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>.</decimal-grouping-character>
+            <decimal-decimal-separator>,</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-#,##0.00*</long-currency-negative-pattern>
+            <long-currency-positive-pattern>#,##0.00 *</long-currency-positive-pattern>
+            <currency-grouping-character>.</currency-grouping-character>
+            <currency-decimal-separator>,</currency-decimal-separator>
+            <long-date-pattern>d MMM yyyy</long-date-pattern>
+            <short-date-pattern>yy-MM-dd</short-date-pattern>
+            <time-pattern>HH:mm:ss</time-pattern>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>.</integer-grouping-character>
+            <integer-decimal-character>,</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>.</quantity-grouping-character>
+            <quantity-decimal-character>,</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>yyyy-MM-dd</input-date-pattern>
+            <input-time-pattern>HH:mm</input-time-pattern>
+            <input-date-time-pattern>yyyy-MM-dd HH:mm</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="fr_FR">
+        <fallback-locale>fr</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>.</decimal-grouping-character>
+            <decimal-decimal-separator>,</decimal-decimal-separator>
+            <short-currency-negative-pattern>- #,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-#,##0.00 *</long-currency-negative-pattern>
+            <long-currency-positive-pattern>#,##0.00 *</long-currency-positive-pattern>
+            <currency-grouping-character>.</currency-grouping-character>
+            <currency-decimal-separator>,</currency-decimal-separator>
+            <long-date-pattern>d MMM yyyy</long-date-pattern>
+            <short-date-pattern>dd/MM/yy</short-date-pattern>
+            <time-pattern>HH:mm:ss</time-pattern>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>.</integer-grouping-character>
+            <integer-decimal-character>,</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>.</quantity-grouping-character>
+            <quantity-decimal-character>,</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>dd/MM/yyyy</input-date-pattern>
+            <input-time-pattern>HH:mm</input-time-pattern>
+            <input-date-time-pattern>dd/MM/yyyy HH:mm</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="it">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="it_IT">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="ja">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="ja_JP">
+        <fallback-locale>default</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>- #,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>- #,##0</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0</short-currency-positive-pattern>
+            <long-currency-negative-pattern>* - #,##0</long-currency-negative-pattern>
+            <long-currency-positive-pattern>* #,##0</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>dd-MMM-yyyy</long-date-pattern>
+            <short-date-pattern>dd/MM/yy</short-date-pattern>
+            <time-pattern>hh:mm:ss a</time-pattern>
+            <date-time-am-string>am</date-time-am-string>
+            <date-time-pm-string>pm</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>- #,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>- #,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0</input-currency-positive-pattern>
+            <input-date-pattern>dd/MM/yyyy</input-date-pattern>
+            <input-time-pattern>hh:mm a</input-time-pattern>
+            <input-date-time-pattern>dd/MM/yyyy hh:mm a</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+    <locale locale-id="nl">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="pt_PT">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="zh">
+        <fallback-locale>default</fallback-locale>
+    </locale>
+    <locale locale-id="zh_CN">
+        <fallback-locale>default</fallback-locale>
+        <regional-settings>
+            <decimal-negative-pattern>-#,##0.00</decimal-negative-pattern>
+            <decimal-positive-pattern>#,##0.00</decimal-positive-pattern>
+            <decimal-grouping-character>,</decimal-grouping-character>
+            <decimal-decimal-separator>.</decimal-decimal-separator>
+            <short-currency-negative-pattern>-#,##0.00</short-currency-negative-pattern>
+            <short-currency-positive-pattern>#,##0.00</short-currency-positive-pattern>
+            <long-currency-negative-pattern>-*#,##0.00</long-currency-negative-pattern>
+            <long-currency-positive-pattern>*#,##0.00</long-currency-positive-pattern>
+            <currency-grouping-character>,</currency-grouping-character>
+            <currency-decimal-separator>.</currency-decimal-separator>
+            <long-date-pattern>yyyy'年'M'月'd'日'</long-date-pattern>
+            <short-date-pattern>yy-M-d</short-date-pattern>
+            <time-pattern>a hh:mm:ss</time-pattern>
+            <date-time-am-string>上午</date-time-am-string>
+            <date-time-pm-string>下午</date-time-pm-string>
+            <integer-negative-pattern>-#,##0</integer-negative-pattern>
+            <integer-positive-pattern>#,##0</integer-positive-pattern>
+            <integer-grouping-character>,</integer-grouping-character>
+            <integer-decimal-character>.</integer-decimal-character>
+            <short-quantity-negative-pattern>-#,##0.###</short-quantity-negative-pattern>
+            <short-quantity-positive-pattern>#,##0.###</short-quantity-positive-pattern>
+            <long-quantity-negative-pattern>-#,##0.### *</long-quantity-negative-pattern>
+            <long-quantity-positive-pattern>#,##0.### *</long-quantity-positive-pattern>
+            <quantity-grouping-character>,</quantity-grouping-character>
+            <quantity-decimal-character>.</quantity-decimal-character>
+            <input-decimal-negative-pattern>-#,##0.00</input-decimal-negative-pattern>
+            <input-decimal-positive-pattern>#,##0.00</input-decimal-positive-pattern>
+            <input-currency-negative-pattern>-#,##0.00</input-currency-negative-pattern>
+            <input-currency-positive-pattern>#,##0.00</input-currency-positive-pattern>
+            <input-date-pattern>yy-M-d</input-date-pattern>
+            <input-time-pattern>a hh:mm</input-time-pattern>
+            <input-date-time-pattern>yy-M-d a hh:mm</input-date-time-pattern>
+            <input-integer-negative-pattern>-#,##0</input-integer-negative-pattern>
+            <input-integer-positive-pattern>#,##0</input-integer-positive-pattern>
+            <input-quantity-negative-pattern>-#,##0.###</input-quantity-negative-pattern>
+            <input-quantity-positive-pattern>#,##0.###</input-quantity-positive-pattern>
+        </regional-settings>
+    </locale>
+</locales>
+

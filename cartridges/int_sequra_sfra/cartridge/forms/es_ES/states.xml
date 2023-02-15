@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+	<field formid="stateCode" label="label.input.state" type="string" mandatory="true" binding="stateCode" missing-error="address.state.missing" value-error="address.field.invalid" parse-error="error.message.required">
+		<options>
+			<option optionid="" 	label="resource.select" 		value=""/>
+
+			<option optionid="Álava" value="Álava" label="state.es.01"/>
+			<option optionid="Albacete" value="Albacete" label="state.es.02"/>
+			<option optionid="Alicante" value="Alicante" label="state.es.03"/>
+			<option optionid="Almería" value="Almería" label="state.es.04"/>
+			<option optionid="Asturias" value="Asturias" label="state.es.33"/>
+			<option optionid="Ávila" value="Ávila" label="state.es.05"/>
+			<option optionid="Badajoz" value="Badajoz" label="state.es.06"/>
+			<option optionid="Barcelona" value="Barcelona" label="state.es.08"/>
+			<option optionid="Burgos" value="Burgos" label="state.es.09"/>
+			<option optionid="Cáceres" value="Cáceres" label="state.es.10"/>
+			<option optionid="Cádiz" value="Cádiz" label="state.es.11"/>
+			<option optionid="Cantabria" value="Cantabria" label="state.es.39"/>
+			<option optionid="Castellón" value="Castellón" label="state.es.12"/>
+			<option optionid="Ciudad Real" value="Ciudad Real" label="state.es.13"/>
+			<option optionid="Córdoba" value="Córdoba" label="state.es.14"/>
+			<option optionid="Cuenca" value="Cuenca" label="state.es.16"/>
+			<option optionid="Gerona" value="Gerona" label="state.es.17"/>
+			<option optionid="Granada" value="Granada" label="state.es.18"/>
+			<option optionid="Guadalajara" value="Guadalajara" label="state.es.19"/>
+			<option optionid="Guipüzcoa" value="Guipüzcoa" label="state.es.20"/>
+			<option optionid="Huelva" value="Huelva" label="state.es.21"/>
+			<option optionid="Huesca" value="Huesca" label="state.es.22"/>
+			<option optionid="Islas Baleares" value="Islas Baleares" label="state.es.07"/>
+			<option optionid="Jaén" value="Jaén" label="state.es.23"/>
+			<option optionid="La Coruña" value="La Coruña" label="state.es.15"/>
+			<option optionid="La Rioja" value="La Rioja" label="state.es.26"/>
+			<option optionid="León" value="León" label="state.es.24"/>
+			<option optionid="Lérida" value="Lérida" label="state.es.25"/>
+			<option optionid="Lugo" value="Lugo" label="state.es.27"/>
+			<option optionid="Madrid" value="Madrid" label="state.es.28"/>
+			<option optionid="Málaga" value="Málaga" label="state.es.29"/>
+			<option optionid="Murcia" value="Murcia" label="state.es.30"/>
+			<option optionid="Navarra" value="Navarra" label="state.es.31"/>
+			<option optionid="Orense" value="Orense" label="state.es.32"/>
+			<option optionid="Palencia" value="Palencia" label="state.es.34"/>
+			<option optionid="Pontevedra" value="Pontevedra" label="state.es.36"/>
+			<option optionid="Salamanca" value="Salamanca" label="state.es.37"/>
+			<option optionid="Segovia" value="Segovia" label="state.es.40"/>
+			<option optionid="Sevilla" value="Sevilla" label="state.es.41"/>
+			<option optionid="Soria" value="Soria" label="state.es.42"/>
+			<option optionid="Tarragona" value="Tarragona" label="state.es.43"/>
+			<option optionid="Teruel" value="Teruel" label="state.es.44"/>
+			<option optionid="Toledo" value="Toledo" label="state.es.45"/>
+			<option optionid="Valencia" value="Valencia" label="state.es.46"/>
+			<option optionid="Valladolid" value="Valladolid" label="state.es.47"/>
+			<option optionid="Vizcaya" value="Vizcaya" label="state.es.48"/>
+			<option optionid="Zamora" value="Zamora" label="state.es.49"/>
+			<option optionid="Zaragoza" value="Zaragoza" label="state.es.50"/>
+			<option optionid="Las Palmas" value="Las Palmas" label="state.es.35"/>
+			<option optionid="Santa Cruz de Tenerife" value="Santa Cruz de Tenerife" label="state.es.38"/>
+			<option optionid="Ceuta" value="Ceuta" label="state.es.51"/>
+			<option optionid="Melilla" value="Melilla" label="state.es.52"/>
+		</options>
+	</field>
+</form>
+
+
+
+

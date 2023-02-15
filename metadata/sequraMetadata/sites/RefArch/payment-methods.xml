@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<payment-settings xmlns="http://www.demandware.com/xml/impex/paymentsettings/2009-09-15">
+   
+    <payment-method method-id="SEQURA">
+        <name xml:lang="x-default">Sequra</name>
+        <enabled-flag>true</enabled-flag>
+        <processor-id>SEQURA</processor-id>
+        <countries>
+            <country country-code="ES"/>
+            <country country-code="IT"/>
+            <country country-code="PT"/>
+        </countries>
+    </payment-method>
+    
+</payment-settings>

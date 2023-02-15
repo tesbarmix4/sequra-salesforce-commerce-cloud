@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+
+    <field formid="sequraPaymentMethod" type="string" binding="sequraPaymentMethod" />
+    
+    <field formid="sequraPaymentMethod" label="" type="string" mandatory="false" binding="sequraPaymentMethod" max-length="3" />
+    
+    <field formid="sequraCampaign" label="" type="string" mandatory="false" binding="sequraCampaign" max-length="50" />
+    
+
+</form>

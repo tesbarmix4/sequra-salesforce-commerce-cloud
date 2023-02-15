@@ -1,0 +1,12 @@
+<div class="sequra-checkout">
+		<form action="${pdict.sequraURL}" method="post" id="sequraform" name="sequraform">
+			<input type="hidden" name="orderToken" value="${pdict.orderToken}"/>
+			<input type="hidden" name="orderID" value="${pdict.orderID}"/>
+		</form>
+		<script language="javascript">
+			function load(){
+				document.getElementById('sequraform').submit();
+			}
+			load();
+		</script>
+</div>
