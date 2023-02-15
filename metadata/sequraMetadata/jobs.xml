@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="SequraHoldPayments" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="SequraHoldPayments" type="custom.sequra.SequraHoldPayments" enforce-restart="false">
+                <description/>
+                <parameters/>
+                <rules>
+                    <on-exit status="ERROR">
+                        <stop-job/>
+                    </on-exit>
+                </rules>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-03-01Z</date>
+                <time>07:27:15.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+    <job job-id="SequraSynchronizePayments" priority="0">
+        <description/>
+        <parameters/>
+        <flow>
+            <context site-id="RefArch"/>
+            <step step-id="SequraSynchronizePayments" type="custom.sequra.SequraSynchronizePayments" enforce-restart="false">
+                <description/>
+                <parameters/>
+                <rules>
+                    <on-exit status="ERROR">
+                        <stop-job/>
+                    </on-exit>
+                </rules>
+            </step>
+        </flow>
+        <rules/>
+        <triggers>
+            <run-once enabled="false">
+                <date>2022-03-01Z</date>
+                <time>07:28:01.000Z</time>
+            </run-once>
+        </triggers>
+    </job>
+
+</jobs>

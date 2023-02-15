@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<form xmlns="http://www.demandware.com/xml/form/2008-04-19">
+	<field formid="stateCode" label="label.input.state" type="string" mandatory="true" binding="stateCode" missing-error="address.state.missing" value-error="address.field.invalid" parse-error="error.message.required">
+		<options>
+			<option optionid="" 	label="resource.select" 		value=""/>
+
+			<option optionid="Aveiro" value="Aveiro" label="state.pt.Aveiro"/>
+			<option optionid="Acores" value="Acores" label="state.pt.Acores"/>
+			<option optionid="Beja" value="Beja" label="state.pt.Beja"/>
+			<option optionid="Braga" value="Braga" label="state.pt.Braga"/>
+			<option optionid="Bragança" value="Bragança" label="state.pt.Bragança"/>
+			<option optionid="Coimbra" value="Coimbra" label="state.pt.Coimbra"/>
+			<option optionid="Evora" value="Evora" label="state.pt.Evora"/>
+			<option optionid="Faro" value="Faro" label="state.pt.Faro"/>
+			<option optionid="Guarda" value="Guarda" label="state.pt.Guarda"/>
+			<option optionid="Leiria" value="Leiria" label="state.pt.Leiria"/>
+			<option optionid="Lisboa" value="Lisboa" label="state.pt.Lisboa"/>
+			<option optionid="Madeira" value="Madeira" label="state.pt.Madeira"/>
+			<option optionid="Portalegre" value="Portalegre" label="state.pt.Portalegre"/>
+			<option optionid="Porto" value="Porto" label="state.pt.Porto"/>
+			<option optionid="Santarem" value="Santarem" label="state.pt.Santarem"/>
+			<option optionid="Setubal" value="Setubal" label="state.pt.Setubal"/>
+			<option optionid="Viana" value="Viana" label="state.pt.Viana"/>
+			<option optionid="VilaReal" value="VilaReal" label="state.pt.VilaReal"/>
+			<option optionid="Viseu" value="Viseu" label="state.pt.Viseu"/>
+		</options>
+	</field>
+</form>

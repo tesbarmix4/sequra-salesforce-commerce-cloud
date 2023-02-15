@@ -1,0 +1,11 @@
+<isset name="sequraConfigHelper" value="${require('*/cartridge/scripts/util/sequraConfigHelper')}" scope="pdict" />
+<div class="d-none" id="sequraConfig" data-enabled="${pdict.sequraConfigHelper.isSequraEnabled()}"
+	data-loadurl="${pdict.sequraConfigHelper.getSequraLoadURL()}"
+	data-listproducts="${pdict.sequraConfigHelper.getSequraProducts()}"
+	data-merchant="${pdict.sequraConfigHelper.getSequraMerchantID()}"
+	data-assetkey="${pdict.sequraConfigHelper.getSequraAssetKey()}"
+	data-locale="${pdict.sequraConfigHelper.getSequraLocale()}"
+	data-countries="${pdict.sequraConfigHelper.getCountriesAllowed()}"
+	data-currency="${pdict.sequraConfigHelper.getSequraCurrency()}"
+	data-develop="${dw.system.System.getInstanceType() !== dw.system.System.PRODUCTION_SYSTEM}">
+</div>

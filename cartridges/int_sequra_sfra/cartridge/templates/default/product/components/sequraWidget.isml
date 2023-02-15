@@ -1,0 +1,25 @@
+<isif condition="${pdict.loadSequraWidget}">
+
+	<iscomment> Instalment simulator </iscomment>
+
+	<isloop items="${pdict.sequraProducts}" var="sequraProduct" status="index">
+		<div id="sequra-widget-${index.count}" 
+			 class="sequra-promotion-widget" 
+			 data-amount="${pdict.amount}"
+			 data-product="${sequraProduct}" 
+			 data-locale="${pdict.locale}" 
+			 silent="${pdict.isSilent}"
+			 <isloop items="${pdict.sequraWidgetsAppearence}" var="sequraType" >
+			 	data-${sequraType.key} = ${sequraType.value}  
+			 </isloop>
+			 >
+		</div>
+		<span
+		  class="sequra-educational-popup"
+		  data-amount="${pdict.amount}"
+		  data-product="${sequraProduct}"
+		  silent="${pdict.isSilent}"
+		></span>
+	</isloop>
+	
+</isif>

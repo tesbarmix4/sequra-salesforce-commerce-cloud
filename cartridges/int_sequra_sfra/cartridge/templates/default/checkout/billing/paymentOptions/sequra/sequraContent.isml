@@ -1,0 +1,16 @@
+<isinclude template="/components/modules" sf-toolkit="off" />
+
+<div class="tab-pane sequra-content" id="sequra-content" role="tabpanel"
+       data-method-id="SEQURA">
+
+       <fieldset class="payment-form-fields">
+
+              <!--- payment method is credit card --->
+              <input type="hidden" class="form-control" name="${pdict.forms.billingForm.paymentMethod.htmlName}"
+                     value="SEQURA" />
+       
+              <isset name="sequraFields" value="${pdict.forms.billingForm.sequraFields}" scope="page" />
+
+              <div class="sequraMethodsContent"></div>
+       </fieldset>
+</div>

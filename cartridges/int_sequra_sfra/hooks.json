@@ -1,0 +1,12 @@
+{
+	"hooks": [
+		{
+			"name": "app.payment.form.processor.sequra",
+			"script": "./cartridge/scripts/hooks/payment/processor/sequra_form_processor"
+		},
+		{
+			"name": "app.payment.processor.sequra",
+			"script": "./cartridge/scripts/hooks/payment/processor/sequra"
+		}
+	]
+}

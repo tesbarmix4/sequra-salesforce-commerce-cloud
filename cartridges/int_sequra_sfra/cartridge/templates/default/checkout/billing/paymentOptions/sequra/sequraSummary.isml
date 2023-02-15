@@ -1,0 +1,18 @@
+
+<isif condition="${payment.sequraPaymentMethod === 'i1'}">
+	<span>${pdict.order.sequraResources.i1}</span>
+<iselseif condition="${payment.sequraPaymentMethod === 'sp1'}">
+	<span>${pdict.order.sequraResources.sp1}</span>
+<iselseif condition="${payment.sequraPaymentMethod === 'pp3'}">
+	<span>${pdict.order.sequraResources.pp3}</span>
+<iselseif condition="${payment.sequraPaymentMethod === 'pp5'}">
+	<span>${pdict.order.sequraResources.pp5}</span>
+<iselse>
+	<span>${payment.paymentMethod}</span>
+</isif>
+
+
+<isif condition="${payment.sequraPaymentStatus && payment.sequraPaymentStatus !== 'approved'}">
+	<br/>
+	<span>${Resource.msg('sequra.checkout.payment.pending.information', 'sequra', null)}</span>
+</isif>

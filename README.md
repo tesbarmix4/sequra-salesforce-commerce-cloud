@@ -1,26 +1,27 @@
-# Base repository template
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Sequra 22.1.0 Cartridge
 
-Things you may want to cover:
+1. To install the cartridge please check the integration documentation in: ./documentation/SFRA Sequra Integration-Documentation-22.1.0
 
-## 📖 Overview 📖
-> An overview on the whole system or link(s) to the docs explaining it.
+2. To upload the cartridges:
 
-### ⚙️ Components summary ⚙️
-> Main components for this service or links to the docs explaining them.  
+   Run npm install to install all of the local dependencies
 
-### 📊 Observability and dashboards 📊
-> Links to the Grafana business and tech related dashboards.  
+   Run npm run compile:js from the command line that would compile all client-side JS files. Run npm run compile:scss that would do the same for css.
 
-### 🔌 System dependencies 🔌
-> DB engine, cache tooling, job queues, cache servers, search engines, etc.
+   Create dw.json file in the root of the project:
 
-## 👩‍💻 Development environment instructions 👩‍💻
-> How to get your local environment ready to start working.
+   {
+   "hostname": "your-sandbox-hostname.demandware.net",
+   "username": "yourlogin",
+   "password": "yourpwd",
+   "code-version": "version_to_upload_to"
+   }
+   Run npm run uploadCartridge. It will upload int_sequra_sfra cartridge to the sandbox you specified in dw.json file.
 
-### 🚧 How to run the test suite 🚧
-> How to run the tests
+3)Testing
+Running unit tests
+You can Run npm run unitTest to execute all unit tests in the project.
 
-## 🚀 Deployment instructions 🚀 
-> How to deploy your service in sandbox or production
+    Running integration tests
+    	Integration tests are located in the ./test/integration directory.
+    	To run integration tests you can use the following command: npm run integration-test

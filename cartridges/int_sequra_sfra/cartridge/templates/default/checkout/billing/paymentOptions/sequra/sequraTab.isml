@@ -1,0 +1,6 @@
+<li class="nav-item" data-method-id="SEQURA">
+    <a class="nav-link sequra-tab" data-toggle="tab" href="#sequra-content" role="tab" data-widgetvalue="${pdict.order.sequraWidgetAmount}">
+        <img class="sequra-option" src="${URLUtils.staticURL('/images/sequra_m.svg')}" height="32"
+            alt="${paymentOption.name}" title="${paymentOption.name}">
+    </a>
+</li>

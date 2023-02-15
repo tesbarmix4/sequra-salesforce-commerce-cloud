@@ -1,0 +1,51 @@
+{
+    "step-types": {
+      "script-module-step": [
+        {
+          "@type-id": "custom.sequra.SequraHoldPayments",
+          "@supports-parallel-execution": "true",
+          "@supports-site-context": "true",
+          "@supports-organization-context": "false",
+	  "description": "Change order payment status, checking that sequra status has been approved async",
+          "module": "int_sequra_sfra/cartridge/scripts/job/handleSequraHoldPayments.js",
+          "function": "handleSequraHoldPayments",
+          "transactional": "false",
+          "timeout-in-seconds": "3600",
+          "status-codes": {
+            "status": [
+              {
+                "@code": "ERROR",
+                "description": "Job failed with an error ."
+              },
+              {
+                "@code": "FINISHED",
+                "description": "Job finished successfully"
+              }
+            ]
+          }
+        },
+        {
+          "@type-id": "custom.sequra.SequraSynchronizePayments",
+          "@supports-parallel-execution": "true",
+          "@supports-site-context": "true",
+          "@supports-organization-context": "false",
+          "description": "Job to Synchronize Sequra Payments.Changes are related to Order Status and Shipping Status.",
+          "module": "int_sequra_sfra/cartridge/scripts/job/synchronizeSequraPayments.js",
+          "function": "synchronizeSequraPayments",
+          "transactional": "false",
+          "timeout-in-seconds": "3600",
+          "status-codes": {
+            "status": [
+              {
+                "@code": "ERROR",
+                "description": "Job failed with an error ."
+              },
+              {
+                "@code": "FINISHED",
+                "description": "Job finished successfully"
+              }
+            ]
+          }
+        }]
+    }
+}

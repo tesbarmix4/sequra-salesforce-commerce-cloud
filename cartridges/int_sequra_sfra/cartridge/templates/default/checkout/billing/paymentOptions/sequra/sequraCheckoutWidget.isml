@@ -1,0 +1,2 @@
+<div id="sequra-widget-${sequraProduct}" class="sequra-promotion-widget" data-amount="${sequraWidgetAmount}"
+	data-product="${sequraProduct}" data-branding="${sequraWidgetColor}"></div>
