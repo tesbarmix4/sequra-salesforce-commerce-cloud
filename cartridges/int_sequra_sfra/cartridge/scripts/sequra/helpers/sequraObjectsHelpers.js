@@ -257,7 +257,7 @@ function createCartJSON(basket) {
                 personalized: false,
                 restockable: true,
                 category: lineItem.getCategoryID() ? lineItem.getCategoryID() : '',
-                description: lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : '',
+                description: lineItem.getProduct() && lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : lineItem.productName,
                 manufacturer: lineItem.getManufacturerName() ? lineItem.getManufacturerName() : '',
                 supplier: '',
                 product_id: lineItem.productID,
