@@ -4,6 +4,7 @@
 
 var URLUtils = require('dw/web/URLUtils');
 var Resource = require('dw/web/Resource');
+var Logger = require('dw/system/Logger').getLogger('Sequra', 'sequra');
 
 
 /**
@@ -129,37 +130,43 @@ function createAddressJSON(basket, type) {
  */
 function createOrderHistory(customer, currentOrder) {
     var orders = [];
-    if (customer && 'profile' in customer && customer.profile !== null) {
-        var customerNo = customer.profile.customerNo;
-        var customerOrders = dw.order.OrderMgr.searchOrders(
-            'customerNo={0} AND status!={1} AND status!={2}',
-            'creationDate desc',
-            customerNo,
-            dw.order.Order.ORDER_STATUS_REPLACED,
-            dw.order.Order.ORDER_STATUS_FAILED
-        );
-        var currentOrderId = '';
-        if (currentOrder instanceof dw.order.Order) {
-            currentOrderId = currentOrder.orderNo;
-        }
+    try {
+        if (customer && 'profile' in customer && customer.profile !== null) {
+            var orderHistory = customer.getOrderHistory();
+            if (orderHistory) {
+                var customerOrders = orderHistory.getOrders(
+                    'status!={0} AND status!={1}',
+                    'creationDate desc',
+                    dw.order.Order.ORDER_STATUS_REPLACED,
+                    dw.order.Order.ORDER_STATUS_FAILED
+                );
 
-        while (customerOrders.hasNext()) {
-            var order = customerOrders.next();
-            if (order.getTotalGrossPrice().value > 0 && currentOrderId !== order.orderNo) {
-                var shipment = order.getDefaultShipment();
-                var orderInfo = {
-                    created_at: order.getCreationDate(),
-                    amount: getMoneyValue(order.getTotalGrossPrice(), order.getCurrencyCode()).value,
-                    currency: order.getCurrencyCode(),
-                    raw_status: shipment.shippingStatus.displayValue,
-                    status: shipment.shippingStatus.displayValue,
-                    postal_code: shipment.shippingAddress && shipment.shippingAddress.postalCode ? shipment.shippingAddress.postalCode : '',
-                    country_code: shipment.shippingAddress.countryCode.value.toUpperCase()
-                };
-                orders.push(orderInfo);
+                var currentOrderId = '';
+                if (currentOrder instanceof dw.order.Order) {
+                    currentOrderId = currentOrder.orderNo;
+                }
+
+                while (customerOrders.hasNext()) {
+                    var order = customerOrders.next();
+                    if (order.getTotalGrossPrice().value > 0 && currentOrderId !== order.orderNo) {
+                        var shipment = order.getDefaultShipment();
+                        var orderInfo = {
+                            created_at: order.getCreationDate(),
+                            amount: getMoneyValue(order.getTotalGrossPrice(), order.getCurrencyCode()).value,
+                            currency: order.getCurrencyCode(),
+                            raw_status: shipment.shippingStatus.displayValue,
+                            status: shipment.shippingStatus.displayValue,
+                            postal_code: shipment.shippingAddress && shipment.shippingAddress.postalCode ? shipment.shippingAddress.postalCode : '',
+                            country_code: shipment.shippingAddress.countryCode.value.toUpperCase()
+                        };
+                        orders.push(orderInfo);
+                    }
+                }
+                customerOrders.close();
             }
         }
-        customerOrders.close();
+    } catch (e) {
+        Logger.error('Sequra Error creatin Order History', e.toString());
     }
 
     return orders;
@@ -257,7 +264,7 @@ function createCartJSON(basket) {
                 personalized: false,
                 restockable: true,
                 category: lineItem.getCategoryID() ? lineItem.getCategoryID() : '',
-                description: lineItem.getProduct() && lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : lineItem.productName,
+                description: lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : '',
                 manufacturer: lineItem.getManufacturerName() ? lineItem.getManufacturerName() : '',
                 supplier: '',
                 product_id: lineItem.productID,
