@@ -245,7 +245,7 @@ function createCartJSON(basket) {
     while (lineItems.hasNext()) {
         var itemDetail = {};
         var lineItem = lineItems.next();
-        if (lineItem instanceof dw.order.ProductLineItem) {
+        if (lineItem instanceof dw.order.ProductLineItem && !lineItem.optionProductLineItem) {
             var money;
             if (taxationPolicy === dw.order.TaxMgr.TAX_POLICY_GROSS) {
                 money = new dw.value.Money(lineItem.basePrice.value, cartJSON.currency);
@@ -264,7 +264,7 @@ function createCartJSON(basket) {
                 personalized: false,
                 restockable: true,
                 category: lineItem.getCategoryID() ? lineItem.getCategoryID() : '',
-                description: lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : '',
+                description: lineItem.getProduct() && lineItem.getProduct().longDescription ? lineItem.getProduct().longDescription.toString() : lineItem.productName,
                 manufacturer: lineItem.getManufacturerName() ? lineItem.getManufacturerName() : '',
                 supplier: '',
                 product_id: lineItem.productID,
